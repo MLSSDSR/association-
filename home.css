@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  text-decoration-line: none;
+  font-family: "indie flower", sans-serif;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid green;
+}
+nav h1 {
+  color: black;
+  font-family: "indie flower", serif;
+  font-size: 30px;
+}
+nav .onglets {
+  margin-top: 3px;
+  margin-left: 300px;
+}
+nav .onglets a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("ocean.jpg")  ;
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+  
+}
+header h1 {
+  font-family: "indie flower", ;
+  font-size: 50px;
+}
+header h4 {
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+header button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  text-decoration-line: none;
+  border: none;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 20px;
+  font-family: "indie flower", serif;
+  cursor: pointer;
+}
+a {
+  text-decoration-line: none;
+}
+a:hover{
+  color: green;
+}
+a:active{
+  color: lightblue;
+}
+
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.main .content .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main .content .card .left {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: green;
+  color: #fff;
+}
+
+.main .content .card .right img {
+  height: 300px;
+  width: 400px;
+  margin-top: 5px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: green;
+  color: #fff;
+  padding: 30px 100px;
+}
+footer h1 {
+  font-family: "indie flower", serif;
+  border-bottom: 1px solid white;
+  width: 20%;
+  padding-bottom: 5px;
+}
+
+footer #contact {
+  color: white;
+}
+
+@media screen and (max-width: 680px) {
+  nav .onglets {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .main .card {
+    margin: 10px;
+  }
+  .main .content .card .right img {
+    height: 200px;
+    width: 100%;
+    margin-top: -0px;
+  }
+  .main .content .card {
+    display: block;
+  }
+  footer {
+    padding: 30px;
+  }
+}
